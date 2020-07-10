@@ -22,12 +22,14 @@ navLink.forEach(link => {
 
 //click event
 introImg.addEventListener('mouseenter', () => {
-    introImg.style.transform = 'scale(2)';
-    introImg.style.opacity = '.4';
+    introImg.style.transform = 'scale(1.25)';
+    // introImg.style.opacity = '.4';
+    introImg.style.zIndex = '-100'
     introImg.style.transition = 'all 2s';
 })
 introImg.addEventListener('mouseleave', () => {
     introImg.style.transform = 'scale(1)';
+    introImg.style.opacity = '1';
     introImg.style.transition = 'all 2s';
 })
 
