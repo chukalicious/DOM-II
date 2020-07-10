@@ -354,13 +354,15 @@ form {
   display: flex;
   flex-direction: column;
   width: 75%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
 }
 form label {
-  border: red 1px solid;
   font-size: 1.7rem;
   padding-bottom: 0.5rem;
 }
-form input {
-  border: dashed 1px blue;
+form input[type='reset'] {
+  margin-top: 1.5rem;
+}
+form input[type='submit'] {
+  margin-top: 1.5rem;
 }
