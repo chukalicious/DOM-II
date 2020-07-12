@@ -353,16 +353,28 @@ img {
 form {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  width: 70%;
   margin: 0 auto 2rem auto;
+  /* input[type='reset'] {
+        .formButtons(); 
+    }
+    input[type='submit'] {
+        .formButtons(); 
+    }  */
 }
 form label {
   font-size: 1.7rem;
   padding-bottom: 0.5rem;
 }
-form input[type='reset'] {
+form input[type='text'] {
+  background-color: red;
+  height: 3rem;
+  border-radius: 0.2rem;
   margin-top: 1.5rem;
 }
-form input[type='submit'] {
+form input[type='email'] {
+  background-color: red;
+  height: 3rem;
+  border-radius: 0.2rem;
   margin-top: 1.5rem;
 }

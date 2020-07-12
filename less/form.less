@@ -1,19 +1,24 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 70%;
     margin: 0 auto 2rem auto;
 
     label {
         font-size: 1.7rem;
         padding-bottom: .5rem;
     }
-
-    input[type='reset'] {
-        margin-top: 1.5rem;
+    input[type='text'] {
+        .formTextInput();
+    }
+    input[type='email'] { 
+         .formTextInput(); 
+    }
+    /* input[type='reset'] {
+        .formButtons(); 
     }
     input[type='submit'] {
-        margin-top: 1.5rem;
-    }
+        .formButtons(); 
+    }  */
     
 }
