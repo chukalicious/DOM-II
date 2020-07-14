@@ -89,6 +89,19 @@ const h4 = document.querySelectorAll('h4');
     })
 ) */
 
+
+// load event
+window.addEventListener('load', () => {
+    alert('Welcome!')
+})
+//scroll event
+const body = document.querySelector('body'); 
+
+body.addEventListener('scroll', () => {
+    body.style.backgroundColor = 'teal'; 
+})
+
+
 const inverseContent = document.querySelector('.inverse-content');
 
 
