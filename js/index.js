@@ -45,7 +45,6 @@ inputFields.forEach(input => {
     }
 }); 
 
-
 //onfocus event
 inputFields.forEach(input => {
     input.addEventListener('focus', () => {
@@ -68,8 +67,9 @@ const button = document.querySelectorAll('.btn');
 
 //click event
 button.forEach(button => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (e) => {
         alert('Fill the form!');
+        e.stopPropagation(); 
     })
 })
 
@@ -78,14 +78,8 @@ h1.addEventListener('dblclick', () => {
     h1.textContent = 'Hop On!'; 
 })
 
-const destination = document.querySelector('.destination');
+const destination = document.querySelectorAll('.destination');
 const h4 = document.querySelectorAll('h4');
-
-/* h4.forEach(title => 
-    title.addEventListener('select', () => {
-        title.style.backgroundColor = 'hotpink'
-    })
-) */
 
 // load event
 window.addEventListener('load', () => {
@@ -124,7 +118,9 @@ window.addEventListener('resize', () => {
 })
 
 
-
+destination.forEach(destination => destination.addEventListener('click', () => {
+    destination.style.backgroundColor = 'pink'; 
+}))
 
 
 
