@@ -97,10 +97,16 @@ window.addEventListener('load', () => {
 //scroll event
 const body = document.querySelector('body'); 
 
-body.addEventListener('scroll', () => {
-    body.style.backgroundColor = 'teal'; 
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset > 65 && window.pageYOffset <= 349) {
+        body.style.backgroundColor = '#F9DECD';
+    } else if (window.pageYOffset > 349 && window.pageYOffset <= 1112) {
+        body.style.backgroundColor = '#ABD2E2';
+    } else if (window.pageYOffset > 1112 && window.pageYOffset < 1388) {
+        body.style.backgroundColor = '#FBB749'
+    }
+     
 })
-
 
 const inverseContent = document.querySelector('.inverse-content');
 
