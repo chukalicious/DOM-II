@@ -22,8 +22,6 @@ navLink.forEach(link => {
     })
 })
 
-
-
 const contentSection = document.querySelector('.content-section');
 const firstContent = contentSection.firstElementChild;
 const imgContent = firstContent.nextElementSibling; 
@@ -89,14 +87,12 @@ const h4 = document.querySelectorAll('h4');
     })
 ) */
 
-
 // load event
 window.addEventListener('load', () => {
     alert('Welcome!')
 })
 //scroll event
 const body = document.querySelector('body'); 
-
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 65 && window.pageYOffset <= 349) {
         body.style.backgroundColor = '#F9DECD';
@@ -105,10 +101,28 @@ window.addEventListener('scroll', () => {
     } else if (window.pageYOffset > 1112 && window.pageYOffset < 1388) {
         body.style.backgroundColor = '#FBB749'
     }
-     
 })
 
 const inverseContent = document.querySelector('.inverse-content');
+
+//keydown event
+document.addEventListener('keydown', () => {
+    alert('Enter you information on the form'); 
+})
+
+const submit = document.querySelector('.submit'); 
+
+//prevent default
+submit.addEventListener('click', (e) => {
+    alert('Thank you!'); 
+    e.preventDefault(); 
+})
+
+//resize event
+window.addEventListener('resize', () => {
+    h1.style.backgroundColor = 'red'; 
+})
+
 
 
 
