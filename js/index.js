@@ -114,7 +114,7 @@ submit.addEventListener('click', (e) => {
 
 //resize event
 window.addEventListener('resize', () => {
-    h1.style.backgroundColor = 'red'; 
+    h1.style.backgroundColor = '#32a2b8'; 
 })
 
 destination.forEach(destination => destination.addEventListener('click', () => {
