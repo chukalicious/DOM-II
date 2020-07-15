@@ -121,17 +121,20 @@ destination.forEach(destination => destination.addEventListener('click', () => {
     destination.style.backgroundColor = 'pink'; 
 }))
 
+
 const reset = submit.previousElementSibling;
 const formBtnSpacing = (button) => {
     button.style.marginTop = '2.5rem';
     button.style.width = '45%'; 
     button.style.marginLeft = 'auto';
     button.style.marginRight = 'auto'; 
-    button.style.fontSize = '2rem; '
-
+    button.style.fontSize = '2rem'; 
 }
 formBtnSpacing(reset);
 formBtnSpacing(submit);
+
+
+
 
 
 
